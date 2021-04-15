@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(background.jpg);
+  background-color: #0d46b1;
+  padding-bottom: 30px;
+  padding-top: 30px;
+ }
+
+.grid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid rgb(76, 133, 240);
+  border-radius: 5px;
+}
+
+.grid input   {
+  background: rgba(4, 126, 241);
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.buttons {
+  /* small spacing within our container */
+  padding: 20px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button  {
+  background: rgb(3, 126, 241);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  color: #EEE;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.zero,.clear{
+  grid-column: span 3;
+}
+
+.clear{
+  background: #fda500;
+}
+
+.equals {
+  background: #28D060;
+}
+
+.function{
+  background: #464646;
+}
