@@ -36,13 +36,8 @@ body {
 }
 
 .buttons {
-  /* small spacing within our container */
   padding: 20px;
-
-  /* the grid stuff! */
   display: grid;
-
-  /* create 4 columns */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
