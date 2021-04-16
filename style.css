@@ -77,3 +77,10 @@ button  {
 .function{
   background: #464646;
 }
+
+.music{
+position: absolute;
+  top: 85%;
+  left: 80%;
+  transform: translateX(-20%) translateY(-15%);
+}
