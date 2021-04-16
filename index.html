@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Calculator</title>
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class = "grid">
-    <input type="text" class="calculator-screen" value="0" disabled />
-      
-      <div class="buttons">
-        <button class="button clear" value="clear_key">CE</button>
-        <button class="button function" value="÷">÷</button>
-      
-        <button class="button" value="7">7</button>
-        <button class="button" value="8">8</button>
-        <button class="button" value="9">9</button>
-        <button class="button function" value="x">×</button>
-      
-        <button class="button" value="4">4</button>
-        <button class="button" value="5">5</button>
-        <button class="button" value="6">6</button>
-        <button class="button function" value="-">−</button>
-      
-        <button class="button" value="1">1</button>
-        <button class="button" value="2">2</button>
-        <button class="button" value="3">3</button>
-        <button class="button function" value="+">+</button>
-      
-        <button class="button zero" value="0">0</button>
-        <button class="button equals" value="=">=</button>
-      </div>
-      </table>
+  <head>
+    <title>Calculator</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class = "grid">
+      <input type="text" class="display" value="0" disabled />
+        
+        <div class="buttons">
+          <button type="button" class="clear" value="clear">CE</button>
+          <button type="button" class="function operator" value="/">÷</button>
+        
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+          <button type="button" class="function operator" value="x">×</button>
+        
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+          <button type="button" class="function operator" value="-">-</button>
+        
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+          <button type="button" class="function operator" value="+">+</button>
+        
+          <button type="button" class="zero" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="equals operator" value="=">=</button>
+        </div>
 
-  </div>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

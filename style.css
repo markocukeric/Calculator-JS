@@ -10,6 +10,7 @@ body {
  }
 
 .grid{
+  background: rgba(4, 126, 241, 0.3);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,29 +43,31 @@ body {
   grid-gap: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
-.button:hover {
+button:hover {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
 
-.button  {
+button  {
   background: rgb(3, 126, 241);
   border: 1px solid rgb(255, 255, 255);
   padding: 20px;
   color: #EEE;
-  border-radius: 5px;
-  font-size: 25px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight:bold;
   cursor: pointer;
 }
 
-.zero,.clear{
-  grid-column: span 3;
+.zero{
+  grid-column: span 2;
 }
 
 .clear{
   background: #fda500;
+  grid-column: span 3;
 }
 
 .equals {
